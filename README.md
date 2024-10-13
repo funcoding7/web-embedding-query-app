@@ -148,7 +148,8 @@ Run the following cURL command in your terminal:
 
 curl -X POST http://127.0.0.1:8000/url-parser \
 -H "Content-Type: application/json" \
--d "{\"url\": \"https://example.com\"}"
+-d "{\"url\": \"https://example.com\"}"  
+
 You should receive a response like:  
 
 {
@@ -159,7 +160,8 @@ Run the following cURL command in your terminal:
 
 curl -X POST http://127.0.0.1:8000/query \
 -H "Content-Type: application/json" \
--d "{\"query\": \"What is a collective noun?\"}"
+-d "{\"query\": \"What is a collective noun?\"}"  
+
 You should receive a response like:  
 
 {
