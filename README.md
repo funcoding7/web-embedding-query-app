@@ -74,4 +74,94 @@ pip install -r requirements.txt
 
 4. Run the FastAPI app
    
-uvicorn app:app --reload
+uvicorn app:app --reload  
+
+5. Using the Endpoints
+You can interact with the FastAPI application through tools like Postman or using cURL commands in the terminal.
+
+1. Using Postman
+Postman is a popular API client for testing and interacting with APIs.
+
+By default, app will run on http://127.0.0.1:8000.
+Testing the /url-parser Endpoint:
+Create a New Request:
+
+In Postman, click on New → Request.
+Set the request type to POST.
+URL: http://127.0.0.1:8000/url-parser.
+Set Headers:
+
+Go to the Headers tab and set the following header:  
+
+Key: Content-Type
+Value: application/json
+Set Body:
+
+Go to the Body tab and select raw.
+Choose JSON format and enter the following body:  
+
+{
+  "url": "https://example.com"
+}
+Send the Request:
+
+Click Send.
+You should get a response like:  
+
+{
+  "message": "Text parsed and embeddings stored successfully."
+}
+Testing the /query Endpoint:
+Create Another Request:
+
+In Postman, create a new request with POST as the request type.
+URL: http://127.0.0.1:8000/query.
+Set Headers:
+
+Go to the Headers tab and set:  
+
+Key: Content-Type
+Value: application/json
+Set Body:
+
+Go to the Body tab, select raw, and choose JSON format.
+Enter a query, for example:  
+
+{
+  "query": "What is a collective noun?"
+}
+Send the Request:
+
+Click Send.
+You should get a response similar to this:  
+
+{
+  "context": "The relevant text chunk",
+  "result": "Generated answer based on the context"
+}
+2. Using cURL
+You can also interact with the API directly from your terminal using cURL.
+
+Testing the /url-parser Endpoint:
+Run the following cURL command in your terminal:  
+
+curl -X POST http://127.0.0.1:8000/url-parser \
+-H "Content-Type: application/json" \
+-d "{\"url\": \"https://example.com\"}"
+You should receive a response like:  
+
+{
+  "message": "Text parsed and embeddings stored successfully."
+}
+Testing the /query Endpoint:
+Run the following cURL command in your terminal:  
+
+curl -X POST http://127.0.0.1:8000/query \
+-H "Content-Type: application/json" \
+-d "{\"query\": \"What is a collective noun?\"}"
+You should receive a response like:  
+
+{
+  "context": "The relevant text chunk",
+  "result": "Generated answer based on the context"
+}
