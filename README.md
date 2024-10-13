@@ -80,6 +80,7 @@ uvicorn app:app --reload
 You can interact with the FastAPI application through tools like Postman or using cURL commands in the terminal.
 
 1. Using Postman
+   
 Postman is a popular API client for testing and interacting with APIs.
 
 By default, app will run on http://127.0.0.1:8000.
