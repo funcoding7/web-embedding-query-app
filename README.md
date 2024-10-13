@@ -132,7 +132,8 @@ Enter a query, for example:
 
 {
   "query": "What is a collective noun?"
-}
+}  
+
 Send the Request:
 
 Click Send.
@@ -145,6 +146,8 @@ You should get a response similar to this:
 
 2. Using cURL
 You can also interact with the API directly from your terminal using cURL.
+
+Open cmd application and run the following commands
 
 Testing the /url-parser Endpoint:
 Run the following cURL command in your terminal:  
