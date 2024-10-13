@@ -138,7 +138,8 @@ You should get a response similar to this:
 {
   "context": "The relevant text chunk",
   "result": "Generated answer based on the context"
-}
+}  
+
 2. Using cURL
 You can also interact with the API directly from your terminal using cURL.
 
