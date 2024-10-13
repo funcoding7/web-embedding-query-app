@@ -38,7 +38,8 @@ Response:
 
 {
   "message": "Text parsed and embeddings stored successfully."
-}
+}  
+
 2. /query (POST)
 Description: Query the stored embeddings with a question, retrieve the most relevant text chunk, and generate an answer using T5.
 Request:
