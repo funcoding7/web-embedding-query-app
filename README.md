@@ -57,11 +57,18 @@ json
 # Setup and Installation
 1. Clone the repository
 git clone https://github.com/your-username/web-embedding-query-app.git
-cd web-embedding-query-app
-2. Set up a Python environment
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-3. Install the dependencies
-pip install -r requirements.txt
-4. Run the FastAPI app
+
+cd web-embedding-query-app  
+
+3. Set up a Python environment
+   
+python -m venv venv  
+
+source venv/bin/activate   # On Windows: venv\Scripts\activate  
+
+5. Install the dependencies
+   
+pip install -r requirements.txt  
+
+7. Run the FastAPI app
 uvicorn app:app --reload
