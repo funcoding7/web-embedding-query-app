@@ -58,7 +58,7 @@ json
 # Setup and Installation
 1. Clone the repository
    
-git clone https://github.com/your-username/web-embedding-query-app.git
+git clone https://github.com/funcoding7/web-embedding-query-app.git
 
 cd web-embedding-query-app  
 
