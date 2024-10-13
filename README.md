@@ -83,8 +83,10 @@ You can interact with the FastAPI application through tools like Postman or usin
    
 Postman is a popular API client for testing and interacting with APIs.
 
-By default, app will run on http://127.0.0.1:8000.
-Testing the /url-parser Endpoint:
+By default, app will run on http://127.0.0.1:8000.  
+
+Testing the /url-parser Endpoint:  
+
 Create a New Request:
 
 In Postman, click on New → Request.
